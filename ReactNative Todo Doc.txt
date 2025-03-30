@@ -1,0 +1,34 @@
+React Native Todo Application
+
+1.install and add logo's of the application.
+
+2.npx expo prebuild, install this this add android and ios folder.
+
+3.npm i @reduxjs/toolkit react-redux redux redux-persist @react-native-async-storage/async-storage, install required packages.  again install npx expo prebuild, for native link will be updated.
+
+4.cd android, ./gradlew assembleRelease
+and 4th step process,
+
+✅ Step 1: Locate the Built APK File
+After running:
+cd android && ./gradlew assembleRelease
+✔ Your APK file will be generated inside this folder:
+android/app/build/outputs/apk/release/app-release.apk
+
+✅ Step 2: Install the APK on Your Android Device
+Run this command to install the APK on your connected Android device:
+
+adb install android/app/build/outputs/apk/release/app-release.apk
+✔ If ADB (Android Debug Bridge) is not installed, install it using:
+npm install -g adb
+
+✅ Step 3: Open the Installed App on Your Device
+Once installed, run:
+adb shell am start -n com.yourappname/.MainActivity
+✔ Replace com.yourappname with your actual package name (found in android/app/src/main/AndroidManifest.xml).
+
+✅ Step 4: Generate an AAB for Play Store (Optional)
+If you want to upload your app to the Google Play Store, generate an AAB instead of an APK:
+./gradlew bundleRelease
+✔ The AAB file will be inside:
+android/app/build/outputs/bundle/release/app-release.aab
