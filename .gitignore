@@ -3,6 +3,11 @@
 # dependencies
 node_modules/
 
+
+# Ignore android and ios folders for Prebuild with EAS Build
+/android
+/ios
+
 # Expo
 .expo/
 dist/
