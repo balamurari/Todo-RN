@@ -4,7 +4,7 @@ React Native Todo Application
 
 2.npx expo prebuild, install this this add android and ios folder.
 
-3.npm i @reduxjs/toolkit react-redux redux redux-persist @react-native-async-storage/async-storage, install required packages.  again install npx expo prebuild, for native link will be updated.
+3.npm i @reduxjs/toolkit react-redux redux redux-persist @react-native-async-storage/async-storage, install required packages.  again install npx expo prebuild, for native link will be updated.=> here async(operations: set,get,reset) it store the local database and persist localStorage for ios. 
 
 4.cd android, ./gradlew assembleRelease
 and 4th step process,
@@ -32,3 +32,7 @@ If you want to upload your app to the Google Play Store, generate an AAB instead
 ./gradlew bundleRelease
 ✔ The AAB file will be inside:
 android/app/build/outputs/bundle/release/app-release.aab
+
+
+5. setup properly, if you starting the aplication you have to configure all this properly, funcationality: REDUX, AXIOS, INTERCEPTORS, ICONS before building the UI.
+6. setup and write proper code for the reducers and remaining files,.. reducers folder: todoSlice, authSlice... rootReducer,store.. you have the write the code in this files.
