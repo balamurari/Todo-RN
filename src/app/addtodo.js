@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   minHeight:{
     minHeight:120,
     textAlignVertical:'top'
-  }
+  },
 })
 
 export default AddTodo
