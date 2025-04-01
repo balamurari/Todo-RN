@@ -5,7 +5,8 @@ import CustomHeader from '../components/CustomHeader'
 import AddButton from '../components/AddButton'
 
 const Home = () => {
-  const data = useSelector((state) => state.todo.data)
+  const data = useSelector((state) => state.todo.data);
+  console.log(data);
 
   return (
     <View style={styles.container}>
